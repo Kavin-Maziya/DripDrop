@@ -4,14 +4,14 @@
 -%}
 
 <section
-  class="sneaker-spotlight sneaker-spotlight--{{ section.id }}"
+  class="drop-spotlight drop-spotlight--{{ section.id }}"
   style="
     --spotlight-bg: {{ section.settings.background_color }};
     --spotlight-text: {{ section.settings.text_color }};
   "
 >
-  <div class="sneaker-spotlight__inner page-width">
-    <div class="sneaker-spotlight__media">
+  <div class="drop-spotlight__inner page-width">
+    <div class="drop-spotlight__media">
       {%- if spotlight_product != blank and spotlight_product.featured_image != blank -%}
         <img
           src="{{ spotlight_product.featured_image | image_url: width: 800 }}"
@@ -21,37 +21,37 @@
           loading="lazy"
         >
       {%- else -%}
-        <div class="sneaker-spotlight__media-placeholder">
+        <div class="drop-spotlight__media-placeholder">
           {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
         </div>
       {%- endif -%}
     </div>
 
-    <div class="sneaker-spotlight__content">
+    <div class="drop-spotlight__content">
       {% content_for 'blocks' %}
     </div>
   </div>
 </section>
 
 {% stylesheet %}
-  .sneaker-spotlight {
+  .drop-spotlight {
     background-color: var(--spotlight-bg);
     color: var(--spotlight-text);
     padding: 60px 0;
   }
-  .sneaker-spotlight__inner {
+  .drop-spotlight__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
     align-items: center;
   }
-  .sneaker-spotlight__media img {
+  .drop-spotlight__media img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     display: block;
   }
-  .sneaker-spotlight__media-placeholder {
+  .drop-spotlight__media-placeholder {
     aspect-ratio: 1;
     background: #f4f4f4;
     border-radius: 8px;
@@ -59,13 +59,13 @@
     align-items: center;
     justify-content: center;
   }
-  .sneaker-spotlight__content {
+  .drop-spotlight__content {
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
   @media (max-width: 749px) {
-    .sneaker-spotlight__inner {
+    .drop-spotlight__inner {
       grid-template-columns: 1fr;
     }
   }
@@ -73,7 +73,7 @@
 
 {% schema %}
 {
-  "name": "Sneaker Spotlight",
+  "name": "Drop Spotlight",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -114,7 +114,7 @@
   "blocks": [{ "type": "spotlight-story" }, { "type": "spotlight-faq" }, { "type": "spotlight-picker" }],
   "presets": [
     {
-      "name": "Sneaker Spotlight",
+      "name": "Drop Spotlight",
       "blocks": [{ "type": "spotlight-story" }, { "type": "spotlight-faq" }, { "type": "spotlight-picker" }]
     }
   ]

@@ -4,7 +4,7 @@
 
 **Live Store:** [dripdrop-9979.myshopify.com](https://dripdrop-9979.myshopify.com)
 
-DripDrop is a South African limited-drop streetwear store built on Shopify's Horizon theme. It celebrates township culture through curated sneaker and apparel drops — where every release is an event, inventory moves fast, and the experience has to match the hype.
+DripDrop is a South African limited-drop streetwear store built on Shopify's Horizon theme. It celebrates township culture through exclusive and limited sneaker and apparel drops — where every release is an event, inventory moves fast, and the experience has to match the hype.
 
 ---
 
@@ -29,7 +29,7 @@ This is the capstone project for the Bitcube Software Development Trainee Progra
 | Theme base | Horizon (block-as-file-type architecture) |
 | Templating | Liquid |
 | Styling | CSS custom properties + Horizon's design token system |
-| Templates | JSON (Online Store 2.0) |
+| Templates | JSON |
 | CI/CD | Shopify CLI + GitHub |
 
 ---

@@ -1,12 +1,12 @@
 [
   {
-    "name": "theme_info",
-    "theme_name": "Horizon",
-    "theme_version": "4.1.3",
-    "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
-  },
+  "name": "theme_info",
+  "theme_name": "DripDrop",
+  "theme_version": "1.0.0",
+  "theme_author": "Kavin Maziya",
+  "theme_documentation_url": "https://github.com/Kavin-Maziya/DripDrop",
+  "theme_support_url": "https://github.com/Kavin-Maziya/DripDrop"
+},
   {
     "name": "t:names.logo_and_favicon",
     "settings": [
@@ -1207,7 +1207,7 @@
         "step": 2,
         "unit": "px",
         "label": "t:settings.badge_corner_radius",
-        "default": 40
+        "default": 2
       },
       {
         "type": "header",
@@ -1328,7 +1328,7 @@
         "step": 1,
         "unit": "px",
         "label": "t:settings.border_radius",
-        "default": 100
+        "default": 0
       },
       {
         "type": "select",
@@ -1405,7 +1405,7 @@
         "step": 1,
         "unit": "px",
         "label": "t:settings.border_radius",
-        "default": 100
+        "default": 0
       },
       {
         "type": "select",
@@ -2114,7 +2114,7 @@
         "step": 1,
         "unit": "px",
         "label": "t:settings.border_radius",
-        "default": 8
+        "default": 2
       },
       {
         "type": "select",

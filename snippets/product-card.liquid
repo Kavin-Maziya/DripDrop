@@ -114,32 +114,58 @@
     "
   >
     {{ children }}
-
-    {% unless onboarding %}
-      <div class="bsc-product-meta" style="padding: 4px 0; font-size: 0.8rem;">
-        {% comment %} Filter: capitalize — brand/vendor name {% endcomment %}
-        <p style="color: #888; font-size: 0.75rem; margin: 0 0 4px;">
-          {{ product.vendor | capitalize }}
-        </p>
-
-        {% comment %} Filter: truncate — short description preview {% endcomment %}
-        <p style="color: #555; font-size: 0.78rem; margin: 0 0 6px;">
-          {{ product.description | truncate: 100 }}
-        </p>
-
-        {% comment %} Conditional — product.available {% endcomment %}
-        {% if product.available %}
-          <button style="padding: 6px 14px; background: #000; color: #fff; border: none; font-size: 0.78rem; cursor: pointer;">
-            Add to Cart
-          </button>
-        {% else %}
-          <span style="display: inline-block; padding: 6px 14px; background: #eee; color: #999; font-size: 0.78rem;">
-            Sold Out
-          </span>
-        {% endif %}
-      </div>
-    {% endunless %}
   </div>
+
+  {% unless onboarding %}
+    <div class="bsc-product-meta">
+      <p class="bsc-product-meta__vendor">
+        {{ product.vendor | capitalize }}
+      </p>
+      <p class="bsc-product-meta__description">
+        {{ product.description | strip_html | truncate: 100 }}
+      </p>
+      {% if product.available %}
+        <a href="{{ product.url }}" class="bsc-product-meta__cta button button--primary">Add to Cart</a>
+      {% else %}
+        <p class="bsc-product-meta__sold-out">Sold Out</p>
+      {% endif %}
+    </div>
+  {% endunless %}
 </product-card>
+
+{% style %}
+  .bsc-product-meta {
+    padding: 4px 0;
+    font-size: 0.8rem;
+  }
+
+  .bsc-product-meta__vendor {
+    color: #888;
+    font-size: 0.75rem;
+    margin: 0 0 4px;
+  }
+
+  .bsc-product-meta__description {
+    color: #555;
+    font-size: 0.78rem;
+    margin: 0 0 6px;
+  }
+
+  .bsc-product-meta__cta {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    text-decoration: none;
+  }
+
+  .bsc-product-meta__sold-out {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #eee;
+    color: #999;
+    font-size: 0.78rem;
+    margin: 0;
+  }
+{% endstyle %}
 
 {% render 'product-card-styles' %}

@@ -58,8 +58,8 @@
         "padding-block-end": 80
       }
     },
-    "sneaker_spotlight_P6PPRH": {
-      "type": "sneaker-spotlight",
+    "drop_spotlight_P6PPRH": {
+      "type": "drop-spotlight",
       "blocks": {
         "spotlight_story_pYf8Ta": {
           "type": "spotlight-story",
@@ -89,7 +89,7 @@
         "spotlight_faq_CAeWi4",
         "spotlight_picker_MnEzFM"
       ],
-      "name": "Sneaker Spotlight",
+      "name": "Drop Spotlight",
       "settings": {
         "product": "nike-air-force-1-low-07-triple-white",
         "background_color": "#ffffff",
@@ -101,6 +101,6 @@
   },
   "order": [
     "main",
-    "sneaker_spotlight_P6PPRH"
+    "drop_spotlight_P6PPRH"
   ]
 }

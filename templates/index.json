@@ -65,7 +65,6 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/bd1e90d5b4a76e9289d0b9948c220617.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -319,7 +318,7 @@
           "type": "drop-image",
           "name": "Drop Image",
           "settings": {
-            "image": "shopify://shop_images/Nike-Air-Jordan-4-Bred.jpg",
+            "image": "shopify://shop_images/air-jordan-4-bred-2026.webp",
             "image_alt": "Upcoming drop teaser"
           },
           "blocks": {}
@@ -343,7 +342,6 @@
           "name": "Brand Logo",
           "settings": {
             "brand_name": "Brand Name",
-            "logo": "shopify://shop_images/jordan-logo.jpg",
             "logo_size": 300,
             "link_url": ""
           },

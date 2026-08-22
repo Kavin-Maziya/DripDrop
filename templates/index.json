@@ -381,12 +381,104 @@
         "background_color": "",
         "columns": 3
       }
+    },
+    "drop_lookbook_6GecpK": {
+      "type": "drop-lookbook",
+      "blocks": {
+        "lookbook_product_kka3w8": {
+          "type": "lookbook_product",
+          "settings": {
+            "product": "",
+            "size": "large",
+            "label": "NEW",
+            "title_override": "",
+            "vendor_override": "",
+            "link_url": ""
+          }
+        },
+        "lookbook_product_7eNaDT": {
+          "type": "lookbook_product",
+          "settings": {
+            "product": "",
+            "size": "small",
+            "label": "LIMITED",
+            "title_override": "",
+            "vendor_override": "",
+            "link_url": ""
+          }
+        },
+        "lookbook_product_xRXLxN": {
+          "type": "lookbook_product",
+          "settings": {
+            "product": "",
+            "size": "small",
+            "label": "",
+            "title_override": "",
+            "vendor_override": "",
+            "link_url": ""
+          }
+        },
+        "editorial_card_aGL46W": {
+          "type": "editorial_card",
+          "settings": {
+            "size": "medium",
+            "eyebrow": "Just Dropped",
+            "headline": "Township Drip. No Limits.",
+            "body": "Limited runs. Local heat. Built for the streets.",
+            "cta_label": "Shop the drop",
+            "cta_url": "",
+            "background_color": "#111111",
+            "text_color": "#ffffff"
+          }
+        },
+        "lookbook_product_znBetT": {
+          "type": "lookbook_product",
+          "settings": {
+            "product": "",
+            "size": "medium",
+            "label": "",
+            "title_override": "",
+            "vendor_override": "",
+            "link_url": ""
+          }
+        },
+        "lookbook_product_RfqyHV": {
+          "type": "lookbook_product",
+          "settings": {
+            "product": "",
+            "size": "medium",
+            "label": "COLLAB",
+            "title_override": "",
+            "vendor_override": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "lookbook_product_kka3w8",
+        "lookbook_product_7eNaDT",
+        "lookbook_product_xRXLxN",
+        "editorial_card_aGL46W",
+        "lookbook_product_znBetT",
+        "lookbook_product_RfqyHV"
+      ],
+      "name": "Lookbook",
+      "settings": {
+        "heading": "The Drop",
+        "subheading": "New Arrivals",
+        "cta_label": "View all",
+        "cta_url": "shopify://collections/new-arrivals",
+        "layout": "editorial",
+        "show_price": true,
+        "show_badge": true
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
     "product_list_fa6P9H",
     "drop_countdown_aGBwRT",
-    "brand_showcase_FBtAk6"
+    "brand_showcase_FBtAk6",
+    "drop_lookbook_6GecpK"
   ]
 }

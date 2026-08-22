@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>Browse our latest products</p>",
+            "text": "<p>Welcome to DripDrop</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -42,7 +42,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Shop all",
+            "label": "New drops",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button-custom",
@@ -65,8 +65,9 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/bd1e90d5b4a76e9289d0b9948c220617.jpg",
+        "image_1": "shopify://shop_images/874452838986913e2975476e89ad7f22.jpg",
         "media_type_2": "image",
+        "image_2": "shopify://shop_images/generate-a-picture-of-what-my-store-offers-and-create-a-cool-logo-from-the-name.png",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
         "media_type_1_mobile": "image",
@@ -319,7 +320,7 @@
           "type": "drop-image",
           "name": "Drop Image",
           "settings": {
-            "image": "shopify://shop_images/Nike-Air-Jordan-4-Bred.jpg",
+            "image": "shopify://shop_images/air-jordan-4-bred-2026.webp",
             "image_alt": "Upcoming drop teaser"
           },
           "blocks": {}
@@ -338,6 +339,16 @@
     "brand_showcase_FBtAk6": {
       "type": "brand-showcase",
       "blocks": {
+        "brand_heading_BhPnDt": {
+          "type": "brand-heading",
+          "name": "Brand Heading",
+          "settings": {
+            "heading": "Featured Brands",
+            "subheading": "The brands we stock at DripDrop.",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
         "brand_logo_NKwKKP": {
           "type": "brand-logo",
           "name": "Brand Logo",
@@ -349,37 +360,107 @@
           },
           "blocks": {}
         },
-        "brand_heading_BhPnDt": {
-          "type": "brand-heading",
-          "name": "Brand Heading",
+        "brand_logo_7LzWr7": {
+          "type": "brand-logo",
+          "name": "Brand Logo",
           "settings": {
-            "heading": "Featured Brands",
-            "subheading": "The brands we stock at DripDrop.",
-            "alignment": "center"
+            "brand_name": "Brand Name",
+            "logo": "shopify://shop_images/Nike-Logo-1971-present.jpg",
+            "logo_size": 200,
+            "link_url": ""
           },
           "blocks": {}
         },
-        "brand_card_mTbbrR": {
-          "type": "brand-card",
-          "name": "Brand Card",
+        "brand_logo_fEBHb7": {
+          "type": "brand-logo",
+          "name": "Brand Logo",
           "settings": {
             "brand_name": "Brand Name",
-            "tagline": "Jordan",
-            "show_tagline": true,
+            "logo": "shopify://shop_images/adidas.png",
+            "logo_size": 220,
+            "link_url": ""
+          },
+          "blocks": {}
+        },
+        "brand_logo_g3J4mR": {
+          "type": "brand-logo",
+          "name": "Brand Logo",
+          "settings": {
+            "brand_name": "Brand Picture",
+            "logo": "shopify://shop_images/puma-logo-and-art-free-vector.webp",
+            "logo_size": 150,
+            "link_url": ""
+          },
+          "blocks": {}
+        },
+        "brand_logo_tjbfYK": {
+          "type": "brand-logo",
+          "name": "Brand Logo",
+          "settings": {
+            "brand_name": "Brand Name",
+            "logo": "shopify://shop_images/R.png",
+            "logo_size": 200,
+            "link_url": ""
+          },
+          "blocks": {}
+        },
+        "brand_logo_VNTLYi": {
+          "type": "brand-logo",
+          "name": "Brand Logo",
+          "settings": {
+            "brand_name": "Brand Name",
+            "logo": "shopify://shop_images/PAPTA2_001.webp",
+            "logo_size": 150,
             "link_url": ""
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "brand_logo_NKwKKP",
         "brand_heading_BhPnDt",
-        "brand_card_mTbbrR"
+        "brand_logo_NKwKKP",
+        "brand_logo_7LzWr7",
+        "brand_logo_fEBHb7",
+        "brand_logo_g3J4mR",
+        "brand_logo_tjbfYK",
+        "brand_logo_VNTLYi"
       ],
       "name": "Brand Showcase",
       "settings": {
         "background_color": "",
         "columns": 3
+      }
+    },
+    "drop_lookbook_nCX77D": {
+      "type": "drop-lookbook",
+      "blocks": {
+        "editorial_card_iC8Djt": {
+          "type": "editorial_card",
+          "settings": {
+            "size": "small",
+            "eyebrow": "Just Dropped",
+            "headline": "Township Drip. No Limits.",
+            "body": "Limited runs. Local heat. Built for the streets.",
+            "cta_label": "Shop the drop",
+            "cta_url": "shopify://collections",
+            "background_image": "shopify://shop_images/air-jordan-4-birds-of-paradise-HV0823-101-release-info-9.jpg",
+            "background_color": "#111111",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "editorial_card_iC8Djt"
+      ],
+      "name": "Lookbook",
+      "settings": {
+        "heading": "The Drop",
+        "subheading": "New Arrivals",
+        "cta_label": "View all",
+        "cta_url": "",
+        "layout": "editorial",
+        "show_price": true,
+        "show_badge": true
       }
     }
   },
@@ -387,6 +468,7 @@
     "hero_jVaWmY",
     "product_list_fa6P9H",
     "drop_countdown_aGBwRT",
-    "brand_showcase_FBtAk6"
+    "brand_showcase_FBtAk6",
+    "drop_lookbook_nCX77D"
   ]
 }

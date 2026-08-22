@@ -447,10 +447,46 @@
             "background_color": "#111111",
             "text_color": "#ffffff"
           }
+        },
+        "lookbook_product_VK9fNX": {
+          "type": "lookbook_product",
+          "settings": {
+            "product": "papta-zipper-tracksuit",
+            "size": "medium",
+            "label": "NEW",
+            "title_override": "",
+            "vendor_override": "",
+            "link_url": ""
+          }
+        },
+        "lookbook_product_dFfLgz": {
+          "type": "lookbook_product",
+          "settings": {
+            "product": "f-c-barcelona-2026-27-mens-kobe-aero-fit-football-shirt",
+            "size": "medium",
+            "label": "LIMITED",
+            "title_override": "",
+            "vendor_override": "",
+            "link_url": ""
+          }
+        },
+        "lookbook_product_ed4Y9L": {
+          "type": "lookbook_product",
+          "settings": {
+            "product": "youngstacpt-x-reebok-oh-two-1",
+            "size": "small",
+            "label": "COLLAB",
+            "title_override": "",
+            "vendor_override": "",
+            "link_url": ""
+          }
         }
       },
       "block_order": [
-        "editorial_card_iC8Djt"
+        "editorial_card_iC8Djt",
+        "lookbook_product_VK9fNX",
+        "lookbook_product_dFfLgz",
+        "lookbook_product_ed4Y9L"
       ],
       "name": "Lookbook",
       "settings": {

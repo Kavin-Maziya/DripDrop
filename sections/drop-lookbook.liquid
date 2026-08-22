@@ -64,75 +64,84 @@
           endif
         -%}
 
-        href="{{ item_link | default: '#' }}" class="lookbook-card lookbook-card--{{ item_size }} lookbook-card--
-        {{- block.id -}}
-        "
-        {{ block.shopify_attributes }}
-        aria-label="{{ display_title | escape }}" >
-        <div class="lookbook-card__media">
-          {%- if display_image != blank -%}
-            {%- liquid
-              case item_size
-                when 'large'
-                  assign img_width = 900
-                when 'medium'
-                  assign img_width = 600
-                else
-                  assign img_width = 420
-              endcase
-              assign img_height = img_width | divided_by: display_image.aspect_ratio | round
-            -%}
-            <img
-              src="{{ display_image | image_url: width: img_width }}"
-              srcset="
-                {{ display_image | image_url: width: 400 }} 400w,
-                {{ display_image | image_url: width: 600 }} 600w,
-                {{ display_image | image_url: width: 900 }} 900w,
-                {{ display_image | image_url: width: 1200 }} 1200w
-              "
-              sizes="
-                (max-width: 749px) 100vw,
-                {%- if item_size == 'large' -%}55vw{%- elsif item_size == 'medium' -%}40vw{%- else -%}28vw{%- endif -%}
-              "
-              alt="{{ display_image.alt | default: display_title | escape }}"
-              width="{{ img_width }}"
-              height="{{ img_height }}"
-              loading="lazy"
-            >
-          {%- else -%}
-            <div class="lookbook-card__placeholder">
-              {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
-            </div>
-          {%- endif -%}
-
-          <div class="lookbook-card__overlay"></div>
-
-          {%- if show_badge and item_label != blank -%}
-            <span class="lookbook-card__badge">{{ item_label }}</span>
-          {%- endif -%}
-        </div>
-
-        <div class="lookbook-card__info">
-          <div class="lookbook-card__info-left">
-            {%- if display_vendor != blank -%}
-              <p class="lookbook-card__vendor">{{ display_vendor }}</p>
+        <a
+          href="{{ item_link | default: '#' }}"
+          class="lookbook-card lookbook-card--{{ item_size }} lookbook-card--{{ block.id }}"
+          {{ block.shopify_attributes }}
+          aria-label="{{ display_title | escape }}"
+        >
+          <div class="lookbook-card__media">
+            {%- if display_image != blank -%}
+              {%- liquid
+                case item_size
+                  when 'large'
+                    assign img_width = 900
+                  when 'medium'
+                    assign img_width = 600
+                  else
+                    assign img_width = 420
+                endcase
+                assign img_height = img_width | divided_by: display_image.aspect_ratio | round
+              -%}
+              <img
+                src="{{ display_image | image_url: width: img_width }}"
+                srcset="
+                  {{ display_image | image_url: width: 400 }} 400w,
+                  {{ display_image | image_url: width: 600 }} 600w,
+                  {{ display_image | image_url: width: 900 }} 900w,
+                  {{ display_image | image_url: width: 1200 }} 1200w
+                "
+                sizes="
+                  (max-width: 749px) 100vw,
+                  {%- if item_size == 'large' -%}55vw{%- elsif item_size == 'medium' -%}40vw{%- else -%}28vw{%- endif -%}
+                "
+                alt="{{ display_image.alt | default: display_title | escape }}"
+                width="{{ img_width }}"
+                height="{{ img_height }}"
+                loading="lazy"
+              >
+            {%- else -%}
+              <div class="lookbook-card__placeholder">
+                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
             {%- endif -%}
-            {%- if display_title != blank -%}
-              <p class="lookbook-card__title">{{ display_title }}</p>
+
+            <div class="lookbook-card__overlay"></div>
+
+            {%- if show_badge and item_label != blank -%}
+              <span class="lookbook-card__badge">{{ item_label }}</span>
             {%- endif -%}
           </div>
-          {%- if show_price and display_price != null -%}
-            <p class="lookbook-card__price">{{ display_price | money }}</p>
-          {%- endif -%}
-        </div>
+
+          <div class="lookbook-card__info">
+            <div class="lookbook-card__info-left">
+              {%- if display_vendor != blank -%}
+                <p class="lookbook-card__vendor">{{ display_vendor }}</p>
+              {%- endif -%}
+              {%- if display_title != blank -%}
+                <p class="lookbook-card__title">{{ display_title }}</p>
+              {%- endif -%}
+            </div>
+            {%- if show_price and display_price != null -%}
+              <p class="lookbook-card__price">{{ display_price | money }}</p>
+            {%- endif -%}
+          </div>
         </a>
 
       {%- elsif block.type == 'editorial_card' -%}
+        {%- liquid
+          assign editorial_bg_image = block.settings.background_image
+        -%}
         <div
           class="lookbook-editorial lookbook-editorial--{{ block.settings.size }} lookbook-editorial--{{ block.id }}"
           style="
             --editorial-bg: {{ block.settings.background_color | default: '#111111' }};
             --editorial-text: {{ block.settings.text_color | default: '#ffffff' }};
+            {% if editorial_bg_image != blank %}
+              background-image: url('{{ editorial_bg_image | image_url: width: 900 }}');
+              background-size: cover;
+              background-position: center;
+            {% endif %}
           "
           {{ block.shopify_attributes }}
         >
@@ -663,6 +672,12 @@
           "type": "url",
           "id": "cta_url",
           "label": "Button URL"
+        },
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background image",
+          "info": "Overrides background colour when set"
         },
         {
           "type": "color",

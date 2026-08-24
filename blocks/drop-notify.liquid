@@ -18,7 +18,18 @@
 {% if show_notify %}
   <div class="drop-notify" {{ block.shopify_attributes }}>
     {% if block.settings.release_date != blank %}
-      <div class="drop-notify__countdown">
+       {%- assign countdown_bg = block.settings.background_image -%}
+<div
+  class="drop-notify__countdown"
+  {% if countdown_bg != blank %}
+    style="
+      background-image: url('{{ countdown_bg | image_url: width: 1200 }}');
+      background-size: cover;
+      background-position: center;
+    "
+  {% endif %}
+>
+  <div class="drop-notify__countdown-overlay"></div>
         <p class="drop-notify__eyebrow">Releasing</p>
         <p class="drop-notify__date">{{ block.settings.release_date }}</p>
 

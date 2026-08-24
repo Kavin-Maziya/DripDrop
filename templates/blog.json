@@ -17,7 +17,7 @@
           "settings": {
             "platform": "instagram",
             "label": "Instagram",
-            "url": ""
+            "url": "https://www.instagram.com"
           }
         },
         "social_link_dBbQVd": {
@@ -25,7 +25,7 @@
           "settings": {
             "platform": "tiktok",
             "label": "TikTok",
-            "url": ""
+            "url": "https://www.tiktok.com/"
           }
         },
         "social_link_fgQFBf": {
@@ -33,7 +33,7 @@
           "settings": {
             "platform": "twitter",
             "label": "X (Twitter)",
-            "url": ""
+            "url": "https://x.com/"
           }
         },
         "social_link_LqGCNQ": {
@@ -41,7 +41,7 @@
           "settings": {
             "platform": "youtube",
             "label": "YouTube",
-            "url": ""
+            "url": "https://www.youtube.com/"
           }
         },
         "social_link_3pDPnV": {
@@ -49,15 +49,15 @@
           "settings": {
             "platform": "shelflife",
             "label": "Shelflife",
-            "url": ""
+            "url": "https://www.shelflife.co.za/"
           }
         },
         "social_link_tgdReG": {
           "type": "social_link",
           "settings": {
             "platform": "sneakernews",
-            "label": "Sneaker News",
-            "url": ""
+            "label": "Sneaker Files",
+            "url": "https://www.sneakerfiles.com/"
           }
         }
       },

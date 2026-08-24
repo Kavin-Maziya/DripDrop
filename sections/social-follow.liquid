@@ -1,0 +1,204 @@
+<section class="social-follow page-width" {{ section.shopify_attributes }}>
+  {%- if section.settings.heading != blank -%}
+    <p class="social-follow__eyebrow">{{ section.settings.heading }}</p>
+  {%- endif -%}
+
+  <div class="social-follow__grid">
+    {%- for block in section.blocks -%}
+      href="{{ block.settings.url }}" class="social-follow__item" target="_blank" rel="noopener noreferrer" aria-label="
+      {{- block.settings.label -}}
+      "
+      {{ block.shopify_attributes }}
+      >
+      <div class="social-follow__icon">
+        {%- case block.settings.platform -%}
+          {%- when 'instagram' -%}
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4.5"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+          {%- when 'tiktok' -%}
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
+            </svg>
+          {%- when 'twitter' -%}
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.736-8.858L1.254 2.25H8.08l4.261 5.632 5.903-5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          {%- when 'facebook' -%}
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          {%- when 'youtube' -%}
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          {%- when 'shelflife' -%}
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M3 6h18M3 12h18M3 18h18"/>
+            </svg>
+          {%- when 'sneakernews' -%}
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10l6 6v8a2 2 0 0 1-2 2z"/>
+              <polyline points="15 2 15 8 21 8"/>
+            </svg>
+        {%- endcase -%}
+      </div>
+      <span class="social-follow__label">{{ block.settings.label }}</span>
+      </a>
+
+
+    {%- endfor -%}
+  </div>
+</section>
+
+{% stylesheet %}
+  .social-follow {
+    padding-block: var(--section-padding-top, 48px) var(--section-padding-bottom, 48px);
+  }
+
+  .social-follow__eyebrow {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin: 0 0 24px;
+  }
+
+  .social-follow__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .social-follow__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    padding: 12px 18px;
+    transition: border-color 0.2s ease, background 0.2s ease;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .social-follow__item:hover {
+    border-color: #0f0f0f;
+    background: #0f0f0f;
+    color: #fff;
+  }
+
+  .social-follow__icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  .social-follow__icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .social-follow__label {
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 749px) {
+    .social-follow__grid {
+      gap: 8px;
+    }
+
+    .social-follow__item {
+      padding: 10px 14px;
+      font-size: 0.75rem;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Social Follow",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Eyebrow label",
+      "default": "Follow & Stay Updated"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "social_link",
+      "name": "Social link",
+      "settings": [
+        {
+          "type": "select",
+          "id": "platform",
+          "label": "Platform",
+          "options": [
+            { "value": "instagram", "label": "Instagram" },
+            { "value": "tiktok", "label": "TikTok" },
+            { "value": "twitter", "label": "X (Twitter)" },
+            { "value": "facebook", "label": "Facebook" },
+            { "value": "youtube", "label": "YouTube" },
+            { "value": "shelflife", "label": "Shelflife" },
+            { "value": "sneakernews", "label": "Sneaker News" }
+          ],
+          "default": "instagram"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Instagram"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Social Follow",
+      "category": "Content",
+      "blocks": [
+        { "type": "social_link", "settings": { "platform": "instagram", "label": "Instagram" } },
+        { "type": "social_link", "settings": { "platform": "tiktok", "label": "TikTok" } },
+        { "type": "social_link", "settings": { "platform": "twitter", "label": "X (Twitter)" } },
+        { "type": "social_link", "settings": { "platform": "youtube", "label": "YouTube" } },
+        { "type": "social_link", "settings": { "platform": "shelflife", "label": "Shelflife" } },
+        { "type": "social_link", "settings": { "platform": "sneakernews", "label": "Sneaker News" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

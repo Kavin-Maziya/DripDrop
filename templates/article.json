@@ -74,8 +74,8 @@
             "border_radius": 5,
             "padding-block-start": 0,
             "padding-block-end": 0,
-            "padding-inline-start": 45,
-            "padding-inline-end": 17
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
           },
           "blocks": {}
         },

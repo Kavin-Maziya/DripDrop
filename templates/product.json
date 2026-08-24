@@ -6,11 +6,24 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "product-information",
       "blocks": {
+        "drop_notify_JLe7cG": {
+          "type": "drop-notify",
+          "name": "Drop Notify",
+          "settings": {
+            "release_date": "September 5, 2026 10:00:00",
+            "form_heading": "Notify me when available",
+            "placeholder": "your@email.com",
+            "button_label": "Notify Me",
+            "success_message": "You're on the list. We'll let you know when it drops."
+          },
+          "blocks": {}
+        },
         "disclosures_g9mWze": {
           "type": "disclosures",
           "name": "t:names.disclosures",
@@ -38,6 +51,7 @@
             "media_columns": "two",
             "image_gap": 4,
             "large_first_image": false,
+            "icons_style": "arrow",
             "slideshow_controls_style": "counter",
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "right",
@@ -116,6 +130,7 @@
                 "border_opacity": 100,
                 "border_color": "",
                 "border_radius": 0,
+                "link": "",
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 0,
@@ -310,6 +325,7 @@
         }
       },
       "block_order": [
+        "drop_notify_JLe7cG",
         "disclosures_g9mWze"
       ],
       "settings": {

@@ -9,6 +9,71 @@
  */
 {
   "sections": {
+    "social_follow_ejfEwz": {
+      "type": "social-follow",
+      "blocks": {
+        "social_link_k4iKXX": {
+          "type": "social_link",
+          "settings": {
+            "platform": "instagram",
+            "label": "Instagram",
+            "url": ""
+          }
+        },
+        "social_link_6jWmtf": {
+          "type": "social_link",
+          "settings": {
+            "platform": "tiktok",
+            "label": "TikTok",
+            "url": ""
+          }
+        },
+        "social_link_Y7GzKn": {
+          "type": "social_link",
+          "settings": {
+            "platform": "twitter",
+            "label": "X (Twitter)",
+            "url": ""
+          }
+        },
+        "social_link_Hwi4N4": {
+          "type": "social_link",
+          "settings": {
+            "platform": "youtube",
+            "label": "YouTube",
+            "url": ""
+          }
+        },
+        "social_link_EwC98T": {
+          "type": "social_link",
+          "settings": {
+            "platform": "shelflife",
+            "label": "Shelflife",
+            "url": ""
+          }
+        },
+        "social_link_r9HAQX": {
+          "type": "social_link",
+          "settings": {
+            "platform": "sneakernews",
+            "label": "Sneaker News",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_link_k4iKXX",
+        "social_link_6jWmtf",
+        "social_link_Y7GzKn",
+        "social_link_Hwi4N4",
+        "social_link_EwC98T",
+        "social_link_r9HAQX"
+      ],
+      "name": "Social Follow",
+      "settings": {
+        "heading": "Follow & Stay Updated"
+      }
+    },
     "section": {
       "type": "main-blog-post",
       "blocks": {
@@ -100,75 +165,10 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
-    },
-    "social_follow_ejfEwz": {
-      "type": "social-follow",
-      "blocks": {
-        "social_link_k4iKXX": {
-          "type": "social_link",
-          "settings": {
-            "platform": "instagram",
-            "label": "Instagram",
-            "url": ""
-          }
-        },
-        "social_link_6jWmtf": {
-          "type": "social_link",
-          "settings": {
-            "platform": "tiktok",
-            "label": "TikTok",
-            "url": ""
-          }
-        },
-        "social_link_Y7GzKn": {
-          "type": "social_link",
-          "settings": {
-            "platform": "twitter",
-            "label": "X (Twitter)",
-            "url": ""
-          }
-        },
-        "social_link_Hwi4N4": {
-          "type": "social_link",
-          "settings": {
-            "platform": "youtube",
-            "label": "YouTube",
-            "url": ""
-          }
-        },
-        "social_link_EwC98T": {
-          "type": "social_link",
-          "settings": {
-            "platform": "shelflife",
-            "label": "Shelflife",
-            "url": ""
-          }
-        },
-        "social_link_r9HAQX": {
-          "type": "social_link",
-          "settings": {
-            "platform": "sneakernews",
-            "label": "Sneaker News",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "social_link_k4iKXX",
-        "social_link_6jWmtf",
-        "social_link_Y7GzKn",
-        "social_link_Hwi4N4",
-        "social_link_EwC98T",
-        "social_link_r9HAQX"
-      ],
-      "name": "Social Follow",
-      "settings": {
-        "heading": "Follow & Stay Updated"
-      }
     }
   },
   "order": [
-    "section",
-    "social_follow_ejfEwz"
+    "social_follow_ejfEwz",
+    "section"
   ]
 }

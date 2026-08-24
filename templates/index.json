@@ -65,9 +65,8 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/generate-a-picture-of-what-my-store-offers-and-create-a-cool-logo-from-the-name.png",
         "media_type_2": "image",
-        "image_2": "shopify://shop_images/874452838986913e2975476e89ad7f22.jpg",
+        "image_2": "shopify://shop_images/824eafd551da8f6a9131b89b63c048f2.jpg",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
         "media_type_1_mobile": "image",

@@ -16,6 +16,7 @@
           "type": "drop-notify",
           "name": "Drop Notify",
           "settings": {
+            "background_image": "shopify://shop_images/generate-a-picture-of-what-my-store-offers-and-create-a-cool-logo-from-the-name.png",
             "release_date": "September 5, 2026 10:00:00",
             "form_heading": "Notify me when available",
             "placeholder": "your@email.com",

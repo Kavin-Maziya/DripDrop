@@ -106,8 +106,9 @@
     "color_palette": {
       "background": "#ffffff",
       "foreground": "#0f0f0f",
-      "color1": "#00aaff",
-      "color2": "#e8e8e8"
+      "color1": "{{ settings.color_palette.foreground }}",
+      "color2": "#e8e8e8",
+      "color3": "#e9e006"
     }
   },
   "presets": {

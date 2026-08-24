@@ -61,7 +61,7 @@
           "settings": {
             "image": "{{ article.image }}",
             "link": "",
-            "image_ratio": "square",
+            "image_ratio": "landscape",
             "width": "fill",
             "custom_width": 90,
             "width_mobile": "fill",

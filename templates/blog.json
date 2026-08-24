@@ -9,6 +9,71 @@
  */
 {
   "sections": {
+    "social_follow_ccAz7E": {
+      "type": "social-follow",
+      "blocks": {
+        "social_link_jWAQJH": {
+          "type": "social_link",
+          "settings": {
+            "platform": "instagram",
+            "label": "Instagram",
+            "url": ""
+          }
+        },
+        "social_link_dBbQVd": {
+          "type": "social_link",
+          "settings": {
+            "platform": "tiktok",
+            "label": "TikTok",
+            "url": ""
+          }
+        },
+        "social_link_fgQFBf": {
+          "type": "social_link",
+          "settings": {
+            "platform": "twitter",
+            "label": "X (Twitter)",
+            "url": ""
+          }
+        },
+        "social_link_LqGCNQ": {
+          "type": "social_link",
+          "settings": {
+            "platform": "youtube",
+            "label": "YouTube",
+            "url": ""
+          }
+        },
+        "social_link_3pDPnV": {
+          "type": "social_link",
+          "settings": {
+            "platform": "shelflife",
+            "label": "Shelflife",
+            "url": ""
+          }
+        },
+        "social_link_tgdReG": {
+          "type": "social_link",
+          "settings": {
+            "platform": "sneakernews",
+            "label": "Sneaker News",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_link_jWAQJH",
+        "social_link_dBbQVd",
+        "social_link_fgQFBf",
+        "social_link_LqGCNQ",
+        "social_link_3pDPnV",
+        "social_link_tgdReG"
+      ],
+      "name": "Social Follow",
+      "settings": {
+        "heading": "Follow & Stay Updated"
+      }
+    },
     "main": {
       "type": "main-blog",
       "blocks": {
@@ -18,9 +83,9 @@
           "settings": {
             "text": "<h1>{{ closest.blog.title }}</h1>",
             "width": "fit-content",
-            "max_width": "narrow",
+            "max_width": "normal",
             "alignment": "left",
-            "type_preset": "h2",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -131,71 +196,6 @@
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 0,
         "padding-block-end": 48
-      }
-    },
-    "social_follow_ccAz7E": {
-      "type": "social-follow",
-      "blocks": {
-        "social_link_jWAQJH": {
-          "type": "social_link",
-          "settings": {
-            "platform": "instagram",
-            "label": "Instagram",
-            "url": ""
-          }
-        },
-        "social_link_dBbQVd": {
-          "type": "social_link",
-          "settings": {
-            "platform": "tiktok",
-            "label": "TikTok",
-            "url": ""
-          }
-        },
-        "social_link_fgQFBf": {
-          "type": "social_link",
-          "settings": {
-            "platform": "twitter",
-            "label": "X (Twitter)",
-            "url": ""
-          }
-        },
-        "social_link_LqGCNQ": {
-          "type": "social_link",
-          "settings": {
-            "platform": "youtube",
-            "label": "YouTube",
-            "url": ""
-          }
-        },
-        "social_link_3pDPnV": {
-          "type": "social_link",
-          "settings": {
-            "platform": "shelflife",
-            "label": "Shelflife",
-            "url": ""
-          }
-        },
-        "social_link_tgdReG": {
-          "type": "social_link",
-          "settings": {
-            "platform": "sneakernews",
-            "label": "Sneaker News",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "social_link_jWAQJH",
-        "social_link_dBbQVd",
-        "social_link_fgQFBf",
-        "social_link_LqGCNQ",
-        "social_link_3pDPnV",
-        "social_link_tgdReG"
-      ],
-      "name": "Social Follow",
-      "settings": {
-        "heading": "Follow & Stay Updated"
       }
     }
   },

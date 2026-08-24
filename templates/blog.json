@@ -59,6 +59,14 @@
             "label": "Sneaker Files",
             "url": "https://www.sneakerfiles.com/"
           }
+        },
+        "social_link_qypxYc": {
+          "type": "social_link",
+          "settings": {
+            "platform": "sneakernews",
+            "label": "Sneaker News",
+            "url": "https://sneakernews.com"
+          }
         }
       },
       "block_order": [
@@ -67,7 +75,8 @@
         "social_link_fgQFBf",
         "social_link_LqGCNQ",
         "social_link_3pDPnV",
-        "social_link_tgdReG"
+        "social_link_tgdReG",
+        "social_link_qypxYc"
       ],
       "name": "Social Follow",
       "settings": {

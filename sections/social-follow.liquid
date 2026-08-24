@@ -64,6 +64,17 @@
                 <path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10l6 6v8a2 2 0 0 1-2 2z"/>
                 <polyline points="15 2 15 8 21 8"/>
               </svg>
+            {%- when 'sneakerfiles' -%}
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10l6 6v8a2 2 0 0 1-2 2z"/>
+                <polyline points="15 2 15 8 21 8"/>
+              </svg>
           {%- endcase -%}
         </div>
         <span class="social-follow__label">{{ block.settings.label }}</span>
@@ -169,7 +180,8 @@
             { "value": "facebook", "label": "Facebook" },
             { "value": "youtube", "label": "YouTube" },
             { "value": "shelflife", "label": "Shelflife" },
-            { "value": "sneakernews", "label": "Sneaker News" }
+            { "value": "sneakernews", "label": "Sneaker News" },
+            { "value": "sneakerfiles", "label": "Sneaker Files" }
           ],
           "default": "instagram"
         },
@@ -197,7 +209,8 @@
         { "type": "social_link", "settings": { "platform": "twitter", "label": "X (Twitter)" } },
         { "type": "social_link", "settings": { "platform": "youtube", "label": "YouTube" } },
         { "type": "social_link", "settings": { "platform": "shelflife", "label": "Shelflife" } },
-        { "type": "social_link", "settings": { "platform": "sneakernews", "label": "Sneaker News" } }
+        { "type": "social_link", "settings": { "platform": "sneakernews", "label": "Sneaker News" } },
+        { "type": "social_link", "settings": { "platform": "sneakerfiles", "label": "Sneaker Files" } }
       ]
     }
   ]

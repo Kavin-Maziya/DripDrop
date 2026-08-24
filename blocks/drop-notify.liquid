@@ -18,18 +18,18 @@
 {% if show_notify %}
   <div class="drop-notify" {{ block.shopify_attributes }}>
     {% if block.settings.release_date != blank %}
-       {%- assign countdown_bg = block.settings.background_image -%}
-<div
-  class="drop-notify__countdown"
-  {% if countdown_bg != blank %}
-    style="
-      background-image: url('{{ countdown_bg | image_url: width: 1200 }}');
-      background-size: cover;
-      background-position: center;
-    "
-  {% endif %}
->
-  <div class="drop-notify__countdown-overlay"></div>
+      {%- assign countdown_bg = block.settings.background_image -%}
+      <div
+        class="drop-notify__countdown"
+        {% if countdown_bg != blank %}
+          style="
+            background-image: url('{{ countdown_bg | image_url: width: 1200 }}');
+            background-size: cover;
+            background-position: center;
+          "
+        {% endif %}
+      >
+        <div class="drop-notify__countdown-overlay"></div>
         <p class="drop-notify__eyebrow">Releasing</p>
         <p class="drop-notify__date">{{ block.settings.release_date }}</p>
 
@@ -106,6 +106,24 @@
 {% endif %}
 
 {% stylesheet %}
+  .drop-notify__countdown {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .drop-notify__countdown-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+  }
+
+  .drop-notify__eyebrow,
+  .drop-notify__date,
+  .drop-notify__timer {
+    position: relative;
+    z-index: 1;
+  }
   .drop-notify {
     display: flex;
     flex-direction: column;
